@@ -1,0 +1,33 @@
+#mapid {
+  width: 100%;
+  height: 100%;
+}
+
+.div-icon {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.inactive {
+  background-image: radial-gradient(circle 40px, darkgrey, transparent);
+}
+
+.ok {
+  background-image: radial-gradient(circle 40px, green, transparent);
+}
+
+.level-1 {
+  background-image: radial-gradient(circle 40px, greenyellow, transparent);
+}
+
+.level-2 {
+  background-image: radial-gradient(circle 40px, yellow, transparent);
+}
+
+.level-3 {
+  background-image: radial-gradient(circle 40px, orange, transparent);
+}
+
+.level-4 {
+  background-image: radial-gradient(circle 40px, darkred, transparent);
+}
