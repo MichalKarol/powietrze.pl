@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/powietrze/static/css/main.5049a8da.chunk.css",
-    "main.js": "/powietrze/static/js/main.878874a0.chunk.js",
-    "main.js.map": "/powietrze/static/js/main.878874a0.chunk.js.map",
+    "main.js": "/powietrze/static/js/main.68469868.chunk.js",
+    "main.js.map": "/powietrze/static/js/main.68469868.chunk.js.map",
     "runtime-main.js": "/powietrze/static/js/runtime-main.67bc7ad8.js",
     "runtime-main.js.map": "/powietrze/static/js/runtime-main.67bc7ad8.js.map",
     "static/css/2.098bc035.chunk.css": "/powietrze/static/css/2.098bc035.chunk.css",
-    "static/js/2.616c8540.chunk.js": "/powietrze/static/js/2.616c8540.chunk.js",
-    "static/js/2.616c8540.chunk.js.map": "/powietrze/static/js/2.616c8540.chunk.js.map",
+    "static/js/2.e916547c.chunk.js": "/powietrze/static/js/2.e916547c.chunk.js",
+    "static/js/2.e916547c.chunk.js.map": "/powietrze/static/js/2.e916547c.chunk.js.map",
     "index.html": "/powietrze/index.html",
-    "precache-manifest.6a22b7a9bf17a4bfd4114b247042f047.js": "/powietrze/precache-manifest.6a22b7a9bf17a4bfd4114b247042f047.js",
+    "precache-manifest.0a7ae23fdfa0daae054b43b21a91e3a1.js": "/powietrze/precache-manifest.0a7ae23fdfa0daae054b43b21a91e3a1.js",
     "service-worker.js": "/powietrze/service-worker.js",
     "static/css/2.098bc035.chunk.css.map": "/powietrze/static/css/2.098bc035.chunk.css.map",
     "static/css/main.5049a8da.chunk.css.map": "/powietrze/static/css/main.5049a8da.chunk.css.map"
@@ -17,8 +17,8 @@
   "entrypoints": [
     "static/js/runtime-main.67bc7ad8.js",
     "static/css/2.098bc035.chunk.css",
-    "static/js/2.616c8540.chunk.js",
+    "static/js/2.e916547c.chunk.js",
     "static/css/main.5049a8da.chunk.css",
-    "static/js/main.878874a0.chunk.js"
+    "static/js/main.68469868.chunk.js"
   ]
 }

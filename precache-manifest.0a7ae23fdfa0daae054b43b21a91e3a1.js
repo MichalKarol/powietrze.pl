@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7edc9a3241035bb36a0c1dab35b04205",
+    "revision": "92863b87ba4f2a692f6c3ccf614ce195",
     "url": "/powietrze/index.html"
   },
   {
-    "revision": "a9e5b5969f58dd738e24",
+    "revision": "792ccc54a6538a399bfe",
     "url": "/powietrze/static/css/2.098bc035.chunk.css"
   },
   {
-    "revision": "1ce57a1d228360bd39b8",
+    "revision": "cc3732a222f00c9c50ef",
     "url": "/powietrze/static/css/main.5049a8da.chunk.css"
   },
   {
-    "revision": "a9e5b5969f58dd738e24",
-    "url": "/powietrze/static/js/2.616c8540.chunk.js"
+    "revision": "792ccc54a6538a399bfe",
+    "url": "/powietrze/static/js/2.e916547c.chunk.js"
   },
   {
-    "revision": "1ce57a1d228360bd39b8",
-    "url": "/powietrze/static/js/main.878874a0.chunk.js"
+    "revision": "cc3732a222f00c9c50ef",
+    "url": "/powietrze/static/js/main.68469868.chunk.js"
   },
   {
     "revision": "f1fa32caab2aaa0a4fcb",
