@@ -1,11 +1,18 @@
 import { pairOfPointsToMeters, Point, Sensor, Source } from "../utils";
 import { default as fetch } from "node-fetch";
+import { Agent } from "https";
 
 type AnnotatedPoint = Point & { id: string };
 
+// Beacuse of very old configuration
+const agent = new Agent({
+  rejectUnauthorized: false
+});
+
 async function getSensorValue(sensor: { id: string }) {
   const sensorResponse = await fetch(
-    `https://api.gios.gov.pl/pjp-api/rest/data/getData/${sensor.id}`
+    `https://api.gios.gov.pl/pjp-api/rest/data/getData/${sensor.id}`,
+    { agent }
   );
   const sensorData = await sensorResponse.json();
   const nonNullableValues = sensorData.values.filter(
@@ -19,7 +26,8 @@ async function getValueFromStation(
   station: AnnotatedPoint
 ): Promise<number | null> {
   const stationResponse = await fetch(
-    `https://api.gios.gov.pl/pjp-api/rest/station/sensors/${station.id}`
+    `https://api.gios.gov.pl/pjp-api/rest/station/sensors/${station.id}`,
+    { agent }
   );
   if (!stationResponse.ok) return null;
   const stationData = await stationResponse.json();
@@ -36,7 +44,8 @@ export async function giosSource(
   radius: number
 ): Promise<Array<Sensor>> {
   const response = await fetch(
-    "https://api.gios.gov.pl/pjp-api/rest/station/findAll"
+    "https://api.gios.gov.pl/pjp-api/rest/station/findAll",
+    { agent }
   );
   if (!response.ok) return [];
 

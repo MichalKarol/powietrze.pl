@@ -25,7 +25,14 @@ app.use(
 app.post("/api/values", async function(req, res) {
   // validate
   const body = req.body;
-  const ok = body && body.position && body.position.lat && body.position.lon;
+  const ok =
+    body &&
+    body.position &&
+    body.position.lat &&
+    body.position.lon &&
+    typeof body.position.lat === "number" &&
+    typeof body.position.lon === "number";
+
   if (!ok) {
     res.sendStatus(400);
     return;
