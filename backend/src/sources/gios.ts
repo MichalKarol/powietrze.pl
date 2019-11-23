@@ -4,15 +4,11 @@ import { Agent } from "https";
 
 type AnnotatedPoint = Point & { id: string };
 
-// Beacuse of very old configuration
-const agent = new Agent({
-  rejectUnauthorized: false
-});
+// Beacuse of very old configuration I am forced to use HTTP instead HTTPS
 
 async function getSensorValue(sensor: { id: string }) {
   const sensorResponse = await fetch(
-    `https://api.gios.gov.pl/pjp-api/rest/data/getData/${sensor.id}`,
-    { agent }
+    `http://api.gios.gov.pl/pjp-api/rest/data/getData/${sensor.id}`
   );
   const sensorData = await sensorResponse.json();
   const nonNullableValues = sensorData.values.filter(
@@ -26,8 +22,7 @@ async function getValueFromStation(
   station: AnnotatedPoint
 ): Promise<number | null> {
   const stationResponse = await fetch(
-    `https://api.gios.gov.pl/pjp-api/rest/station/sensors/${station.id}`,
-    { agent }
+    `http://api.gios.gov.pl/pjp-api/rest/station/sensors/${station.id}`
   );
   if (!stationResponse.ok) return null;
   const stationData = await stationResponse.json();
@@ -44,8 +39,7 @@ export async function giosSource(
   radius: number
 ): Promise<Array<Sensor>> {
   const response = await fetch(
-    "https://api.gios.gov.pl/pjp-api/rest/station/findAll",
-    { agent }
+    "http://api.gios.gov.pl/pjp-api/rest/station/findAll"
   );
   if (!response.ok) return [];
 
