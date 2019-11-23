@@ -1,18 +1,18 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import { MainView } from "./views/MainView/MainView";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Router>
+      <HashRouter basename="/">
         <Switch>
           <Route exact path="/">
             <MainView />
           </Route>
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 };

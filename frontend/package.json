@@ -2,7 +2,7 @@
   "name": "powietrze.pl",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MichalKarol.github.io/powietrze",
+  "homepage": "https://michalkarol.github.io/powietrze",
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.7",

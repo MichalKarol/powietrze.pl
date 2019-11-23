@@ -1,0 +1,42 @@
+{
+  "name": "powietrze",
+  "version": "1.0.0",
+  "description": "Backend for powietrze",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "prod": "tsc && node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalKarol/powietrze.git"
+  },
+  "keywords": [
+    "air",
+    "quality",
+    "node",
+    "backend"
+  ],
+  "author": "Michal Karol <michal.p.karol@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichalKarol/powietrze/issues"
+  },
+  "homepage": "https://github.com/MichalKarol/powietrze#readme",
+  "dependencies": {
+    "@sentry/node": "^5.9.0",
+    "@sentry/types": "^5.7.1",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/node-fetch": "^2.5.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44"
+  }
+}
