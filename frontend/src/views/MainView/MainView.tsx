@@ -24,6 +24,7 @@ export function MainView() {
   const [data, setData] = useState<Array<Sensor>>([]);
   const DEFAULT_POSITION = { lat: 51.107, lon: 17.0385 };
   const [position, setPosition] = useState<Position | null>(null);
+  const [hasFailed, setHasFailed] = useState<boolean>(false);
 
   useEffect(() => {
     if (position) return;
@@ -56,7 +57,11 @@ export function MainView() {
       body: JSON.stringify({ position })
     })
       .then(response => response.json())
-      .then(response => setData(response));
+      .then(response => setData(response))
+      .catch(error => {
+        console.log(error);
+        setHasFailed(true);
+      });
   }, [position]);
 
   const iconMap = new Map<string, L.DivIcon>(
@@ -155,7 +160,14 @@ export function MainView() {
               {getAveragePollution(data).toPrecision(2)}
             </div>
           ) : (
-            <div className="pollution-avg inactive"> - </div>
+            <div
+              className={cn([
+                "pollution-avg",
+                hasFailed ? "offline" : "inactive"
+              ])}
+            >
+              {hasFailed ? "Offline" : "-"}
+            </div>
           )}
         </LMap>
       </div>
