@@ -36,7 +36,7 @@
 .pollution-avg {
   font-size: 3em;
   position: absolute;
-  bottom: 2%;
+  top: 2%;
   right: 5%;
   z-index: 1000;
   width: 15vmin;
