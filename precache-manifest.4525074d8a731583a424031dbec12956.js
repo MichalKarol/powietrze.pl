@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86a5f9ab4f01c8c39a35ba02b592c4a8",
+    "revision": "6b6ebb77a9c16178a13cb6d1448204be",
     "url": "/powietrze/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/powietrze/static/css/2.098bc035.chunk.css"
   },
   {
-    "revision": "abf0b08f15dd59692487",
-    "url": "/powietrze/static/css/main.4f21bb9a.chunk.css"
+    "revision": "50d2d223f44871633a8a",
+    "url": "/powietrze/static/css/main.220d497f.chunk.css"
   },
   {
     "revision": "cffbc543c6ec906f9f79",
     "url": "/powietrze/static/js/2.cd4cb0d8.chunk.js"
   },
   {
-    "revision": "abf0b08f15dd59692487",
+    "revision": "50d2d223f44871633a8a",
     "url": "/powietrze/static/js/main.c56e79d4.chunk.js"
   },
   {
