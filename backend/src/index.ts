@@ -19,7 +19,7 @@ const RADIUS = 5000;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:3000"
+    origin: "https://michalkarol.github.io/powietrze/"
   })
 );
 app.post("/api/values", async function(req, res) {
