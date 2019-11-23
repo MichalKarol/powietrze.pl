@@ -3,6 +3,8 @@ import { default as fetch } from "node-fetch";
 import { Agent } from "https";
 
 type AnnotatedPoint = Point & { Device: string };
+
+// Beacuse of wrong certificate chain
 const agent = new Agent({
   rejectUnauthorized: false
 });

@@ -4,12 +4,14 @@
   "private": true,
   "homepage": "https://michalkarol.github.io/powietrze",
   "dependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/jest": "24.0.23",
     "@types/node": "12.12.7",
     "@types/react": "16.9.11",
     "@types/react-dom": "16.9.4",
     "@types/react-leaflet": "^2.5.0",
     "@types/react-router-dom": "^5.1.2",
+    "classnames": "^2.2.6",
     "gh-pages": "^2.1.1",
     "leaflet": "^1.5.1",
     "react": "^16.11.0",
@@ -21,7 +23,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-app-rewired build && sw-precache --config=sw-precache-config.js",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "predeploy": "npm run build",
